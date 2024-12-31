@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Styles Demo</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        .image-container {
+            margin: 10px;
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px 10px 50px 40px;
+           
+        }
+      img:hover{
+        width: 210px;
+      }
+     
+
+        .grayscale {
+         filter: grayscale(50%); 
+        
+        }
+
+        .sepia {
+            filter: sepia(100%);
+        }
+
+        .blur {
+            filter: blur(1px);
+        }
+
+        .brightness {
+            filter: brightness(10%);
+        }
+
+        .contrast {
+            filter: contrast(100%);
+        }
+
+        .opacity {
+            filter: opacity(70%);
+        }
+
+        .hue-rotate {
+            filter: hue-rotate(280deg);
+        }
+        .clip{
+     font-weight: 800;
+     font-size: 6rem;
+   text-align: center;
+ background-image: url(image/clg\ \(8\).jpg);
+   background-size: 100%;
+   background-position: bottom;
+   -webkit-background-clip: text;  
+ 
+    color: rgba(0, 0, 0, 0.1); 
+}
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <h3>Grayscale</h3>
+        <img class="grayscale" src="image/AVC COLLEGE IMAGE.JPEG" alt="Grayscale Image">
+    </div>
+    <div class="image-container">
+        <h3>Sepia</h3>
+        <img class="sepia" src="image/AVC COLLEGE IMAGE.JPEG" alt="Sepia Image">
+    </div>
+    <div class="image-container">
+        <h3>Blur</h3>
+        <img class="blur" src="image/AVC COLLEGE IMAGE.JPEG" alt="Blur Image">
+    </div>
+    <div class="image-container">
+        <h3>Brightness</h3>
+        <img class="brightness" src="image/AVC COLLEGE IMAGE.JPEG" alt="Brightness Image">
+    </div>
+    <div class="image-container">
+        <h3>Contrast</h3>
+        <img class="contrast" src="image/AVC COLLEGE IMAGE.JPEG" alt="Contrast Image">
+    </div>
+    <div class="image-container">
+        <h3>Opacity</h3>
+        <img class="opacity" src="image/AVC COLLEGE IMAGE.JPEG" alt="Opacity Image">
+    </div>
+    <div class="image-container">
+        <h3>Hue Rotate</h3>
+        <img class="hue-rotate" src="image/AVC COLLEGE IMAGE.JPEG" alt="Hue Rotate Image">
+    </div>
+
+
+
+    <div class="clip">University</div>
+
+  </body>
+</html>
